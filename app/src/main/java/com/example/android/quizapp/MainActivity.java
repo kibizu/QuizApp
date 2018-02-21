@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(Bundle.EMPTY);
         setContentView(R.layout.activity_main);
 
-
         // If we have a saved state then we can restore it now
         if (savedInstanceState != null) {
 
@@ -190,7 +189,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is the onclick method of the first radio group
      */
-
     public void firstAnswerCheck(View view) {
         // Is the button now checked?
 
@@ -227,7 +225,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      *This method is the onclick method of the second Radio Group
      */
-
     public void secondAnswerCheck(View view) {
         // Is the button now checked?
         checked2 = ((RadioButton) view).isChecked();
@@ -256,38 +253,38 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
         }
-
-
     }
 
     /**
      * This method is the onclick method of the check boxes in the fourth question
      */
-
     public void fourthAnswerCheck(View view) {
         // Is the view now checked?
         checked4 = ((CheckBox) view).isChecked();
         // Check which checkbox was clicked
         switch(view.getId()) {
             case R.id.checkbox_wit:
-                if (checked4)
+                if (checked4) {
                     witCheckValue = true;
-                break;
+                    break;
+                }
             case R.id.checkbox_intelligence:
-                if (checked4)
+                if (checked4) {
                     intellCheckValue = true;
-                break;
+                    break;
+                }
             case R.id.checkbox_cunning:
-                if (checked4)
+                if (checked4) {
                     cunningCheckValue = true;
-                break;
+                    break;
+                }
             case R.id.checkbox_loyalty:
-                if (checked4)
+                if (checked4) {
                     loyaltyCheckValue = true;
-                break;
+                    break;
+                }
 
         }
-
 
         return;
 
@@ -296,7 +293,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is the onclick method of the radio group of the fifth question
      */
-
     public void fifthAnswerCheck(View view) {
         // Is the button now checked?
         checked5 = ((RadioButton) view).isChecked();
@@ -330,7 +326,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is the onclick method of the radio group of the sixth question
      */
-
     public void sixthAnswerCheck(View view) {
         // Is the button now checked?
         checked6 = ((RadioButton) view).isChecked();
@@ -366,7 +361,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is the onclick method of the radio group of the eighth question
      */
-
     public void eighthAnswerCheck(View view) {
         // Is the button now checked?
         checked8 = ((RadioButton) view).isChecked();
@@ -400,7 +394,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method checks all the answers and if the answer is correct, add 1 to result
      */
-
     private int checkQuest (){
         incomplete = 0;
 
@@ -515,7 +508,6 @@ public class MainActivity extends AppCompatActivity {
      * @param textMessage is the message of the result toast message
      * @param imageId is the resource id of the image, if there is, of the result toast message
      */
-
     private void createResultToastMessage (String textMessage, int imageId) {
 
         Context context=getApplicationContext();
@@ -540,7 +532,6 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param textMessage is the message of the custom toast message
      */
-
     private void createToastMessage (String textMessage) {
 
         Context context=getApplicationContext();
@@ -562,7 +553,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method reset all the variables and all views of the quiz
      */
-
     private void resetFields() {
         RadioGroup radioGroup;
         EditText editText;
@@ -613,7 +603,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the Mischief Managed button is clicked.
      */
-
     public void submitAnswers(View view) {
 
         checkQuest();

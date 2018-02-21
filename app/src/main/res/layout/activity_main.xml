@@ -141,7 +141,7 @@
         <RadioGroup
             android:id="@+id/radiogroup5"
             style="@style/RadioGroup"
-            android:paddingBottom="15dp">
+            android:paddingBottom="@dimen/padding15">
 
             <RadioButton
                 android:id="@+id/radio_accio"
@@ -173,7 +173,7 @@
         <RadioGroup
             android:id="@+id/radiogroup6"
             style="@style/RadioGroup"
-            android:paddingBottom="15dp">
+            android:paddingBottom="@dimen/padding15">
 
             <RadioButton
                 android:id="@+id/radio_green"
@@ -212,13 +212,13 @@
 
         <TextView
             style="@style/QuestFont"
-            android:paddingTop="15dp"
+            android:paddingTop="@dimen/padding15"
             android:text="@string/eighth_quest" />
 
         <RadioGroup
             android:id="@+id/radiogroup8"
             style="@style/RadioGroup"
-            android:paddingBottom="15dp">
+            android:paddingBottom="@dimen/padding15">
 
             <RadioButton
                 android:id="@+id/radio_whomping"
