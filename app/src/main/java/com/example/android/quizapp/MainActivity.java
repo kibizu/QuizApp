@@ -263,11 +263,13 @@ public class MainActivity extends AppCompatActivity {
         checked4 = ((CheckBox) view).isChecked();
         // Check which checkbox was clicked
         switch(view.getId()) {
+            //** This is the correct answer**//
             case R.id.checkbox_wit:
                 if (checked4) {
                     witCheckValue = true;
                     break;
                 }
+            //** This is the correct answer**//
             case R.id.checkbox_intelligence:
                 if (checked4) {
                     intellCheckValue = true;
@@ -299,7 +301,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-
+            //** This is the correct answer**//
             case R.id.radio_accio:
                 if (checked5) {
                     idRadioButton5 = R.id.radio_accio;
@@ -338,6 +340,7 @@ public class MainActivity extends AppCompatActivity {
                     idRadioButton6 = R.id.radio_green;
                     break;
                 }
+            //** This is the correct answer**//
             case R.id.radio_scarlet:
                 if (checked6) {
                     idRadioButton6 = R.id.radio_scarlet;
@@ -355,7 +358,6 @@ public class MainActivity extends AppCompatActivity {
                 }
         }
 
-
     }
 
     /**
@@ -367,7 +369,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-
+            //** This is the correct answer**//
             case R.id.radio_whomping:
                 if (checked8) {
                     idRadioButton8 = R.id.radio_whomping;
