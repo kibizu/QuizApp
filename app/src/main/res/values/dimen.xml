@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paddings -->
+    <dimen name="padding6">6dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="padding32">32dp</dimen>
+    <dimen name="padding30">30dp</dimen>
+    <dimen name="padding35">35dp</dimen>
+
+    <!-- Margins -->
+
+    <dimen name="margin15">15dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="margin32">32dp</dimen>
+
+    <dimen name="radButWidth">150dp</dimen>
+    <dimen name="radButHeight">184dp</dimen>
+
+    <dimen name="fontSize14">14sp</dimen>
+    <dimen name="fontSize16">16sp</dimen>
+
+    <dimen name="heightToastImage">211dp</dimen>
+    <dimen name="widthToastImage">350dp</dimen>
+
+</resources>

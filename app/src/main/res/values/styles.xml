@@ -1,0 +1,126 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="QuestFont">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding15</item>
+        <item name="android:paddingRight">@dimen/padding15</item>
+        <item name="android:textColor">@color/colorQuestFont</item>
+        <item name="android:textSize">@dimen/fontSize16</item>
+        <item name="android:gravity">fill_horizontal</item>
+    </style>
+
+    <style name="FirstQuest">
+        <item name="android:layout_width">@dimen/radButWidth</item>
+        <item name="android:layout_height">@dimen/radButHeight</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:onClick">firstAnswerCheck</item>
+        <item name="android:paddingRight">@dimen/padding35</item>
+        <item name="android:paddingTop">@dimen/padding6</item>
+        <item name="android:textColor">@color/colorRadioFont</item>
+        <item name="android:textSize">@dimen/fontSize14</item>
+    </style>
+
+    <style name="SecondQuest">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">secondAnswerCheck</item>
+        <item name="android:textColor">@color/colorRadioFont</item>
+        <item name="android:textSize">@dimen/fontSize14</item>
+    </style>
+
+
+    <style name="FourthQuest">
+        <item name="android:textColor">@color/colorCheckFont</item>
+        <item name="android:textSize">@dimen/fontSize14</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">fourthAnswerCheck</item>
+    </style>
+
+    <style name="FifthQuest">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">fifthAnswerCheck</item>
+        <item name="android:textColor">@color/colorRadioFont</item>
+        <item name="android:textSize">@dimen/fontSize14</item>
+
+    </style>
+
+    <style name="SixthQuest">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">sixthAnswerCheck</item>
+        <item name="android:textColor">@color/colorRadioFont</item>
+        <item name="android:textSize">@dimen/fontSize14</item>
+
+    </style>
+
+    <style name="EighthQuest">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">eighthAnswerCheck</item>
+        <item name="android:textColor">@color/colorRadioFont</item>
+        <item name="android:textSize">@dimen/fontSize14</item>
+
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingTop">@dimen/padding15</item>
+        <item name="android:layout_marginLeft">@dimen/margin32</item>
+        <item name="android:layout_marginRight">@dimen/margin15</item>
+        <item name="android:textColor">@color/colorEditFont</item>
+        <item name="android:textSize">@dimen/fontSize14</item>
+        <item name="android:gravity">fill_horizontal</item>
+    </style>
+
+    <style name="RadioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/padding15</item>
+        <item name="android:paddingLeft">@dimen/padding32</item>
+        <item name="android:paddingRight">@dimen/padding15</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayout">
+
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">@dimen/padding15</item>
+        <item name="android:paddingLeft">@dimen/padding32</item>
+        <item name="android:paddingRight">@dimen/padding15</item>
+        <item name="android:paddingBottom">@dimen/padding15</item>
+
+    </style>
+
+    <style name="Button">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin30</item>
+        <item name="android:layout_marginLeft">@dimen/margin15</item>
+        <item name="android:layout_marginTop">@dimen/margin16</item>
+        <item name="android:onClick">submitAnswers</item>
+        <item name="android:textColor">@color/colorButtonFont</item>
+        <item name="android:textSize">@dimen/fontSize16</item>
+        <item name="android:gravity">fill_horizontal</item>
+
+    </style>
+</resources>

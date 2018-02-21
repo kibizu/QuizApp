@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d1d1e</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#060074</color>
+    <color name="colorQuestFont">#000000</color>
+    <color name="colorRadioFont">#000000</color>
+    <color name="colorCheckFont">#000000</color>
+    <color name="colorEditFont">#000000</color>
+    <color name="colorButtonFont">#000000</color>
+    <color name="colorTextToast">#000000</color>
+</resources>
