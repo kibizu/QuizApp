@@ -15,7 +15,6 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorTextToast"
             android:layout_gravity="center_horizontal"
-            android:text="Ciao sono un toast message"
             android:textSize="18sp"
             android:textAlignment="center"
             />

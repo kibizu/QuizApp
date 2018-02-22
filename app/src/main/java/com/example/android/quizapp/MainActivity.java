@@ -89,8 +89,6 @@ public class MainActivity extends AppCompatActivity {
     private int incomplete;
 
     ActivityMainBinding binding;
-    CustomToastBinding customToastBinding;
-    ResultToastBinding resultToastBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
