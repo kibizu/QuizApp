@@ -1,255 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
 
-    <LinearLayout
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        tools:context=".MainActivity"
+        >
 
-        <ImageView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:adjustViewBounds="true"
-            android:src="@drawable/quizz_app_home" />
+            android:orientation="vertical">
 
-        <TextView
-            style="@style/QuestFont"
-            android:paddingTop="@dimen/padding30"
-            android:text="@string/first_quest" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/quizz_app_home" />
 
-        <RadioGroup
-            android:id="@+id/radiogroup1"
-            style="@style/RadioGroup">
+            <TextView
+                style="@style/QuestFont"
+                android:paddingTop="@dimen/padding30"
+                android:text="@string/first_quest" />
 
-            <RadioButton
-                android:id="@+id/radio_badger"
-                style="@style/FirstQuest"
-                android:background="@drawable/tassorosso1"
-                android:text="@string/badger" />
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                style="@style/RadioGroup">
 
-            <RadioButton
-                android:id="@+id/radio_eagle"
-                style="@style/FirstQuest"
-                android:layout_marginTop="@dimen/margin15"
-                android:background="@drawable/corvonero1"
-                android:text="@string/eagle" />
+                <RadioButton
+                    android:id="@+id/radio_badger"
+                    style="@style/FirstQuest"
+                    android:background="@drawable/tassorosso1"
+                    android:text="@string/badger" />
 
-
-            <RadioButton
-                android:id="@+id/radio_lion"
-                style="@style/FirstQuest"
-                android:layout_marginTop="@dimen/margin15"
-                android:background="@drawable/grifondoro1"
-                android:text="@string/lion" />
-
-            <RadioButton
-                android:id="@+id/radio_snake"
-                style="@style/FirstQuest"
-                android:layout_marginTop="@dimen/margin15"
-                android:background="@drawable/serpeverde1"
-                android:text="@string/snake" />
-
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/radio_eagle"
+                    style="@style/FirstQuest"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:background="@drawable/corvonero1"
+                    android:text="@string/eagle" />
 
 
-        <TextView
-            style="@style/QuestFont"
-            android:paddingTop="@dimen/padding20"
-            android:text="@string/second_quest" />
+                <RadioButton
+                    android:id="@+id/radio_lion"
+                    style="@style/FirstQuest"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:background="@drawable/grifondoro1"
+                    android:text="@string/lion" />
 
-        <RadioGroup
-            android:id="@+id/radiogroup2"
-            style="@style/RadioGroup"
-            android:paddingBottom="@dimen/padding15">
+                <RadioButton
+                    android:id="@+id/radio_snake"
+                    style="@style/FirstQuest"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:background="@drawable/serpeverde1"
+                    android:text="@string/snake" />
 
-            <RadioButton
-                android:id="@+id/radio_sefian"
-                style="@style/SecondQuest"
-                android:text="@string/sefian" />
+            </RadioGroup>
 
-            <RadioButton
-                android:id="@+id/radio_sesean"
-                style="@style/SecondQuest"
-                android:text="@string/sesean" />
 
-            <RadioButton
-                android:id="@+id/radio_sethan"
-                style="@style/SecondQuest"
-                android:text="@string/sethan" />
+            <TextView
+                style="@style/QuestFont"
+                android:paddingTop="@dimen/padding20"
+                android:text="@string/second_quest" />
 
-            <RadioButton
-                android:id="@+id/radio_sefoan"
-                style="@style/SecondQuest"
-                android:text="@string/sefoan" />
-        </RadioGroup>
+            <RadioGroup
+                android:id="@+id/radiogroup2"
+                style="@style/RadioGroup"
+                android:paddingBottom="@dimen/padding15">
 
-        <TextView
-            style="@style/QuestFont"
-            android:text="@string/third_quest" />
+                <RadioButton
+                    android:id="@+id/radio_sefian"
+                    style="@style/SecondQuest"
+                    android:text="@string/sefian" />
 
-        <EditText
-            android:id="@+id/name_principal_input"
-            style="@style/EditText"
-            android:hint="@string/writean" />
+                <RadioButton
+                    android:id="@+id/radio_sesean"
+                    style="@style/SecondQuest"
+                    android:text="@string/sesean" />
 
-        <TextView
-            style="@style/QuestFont"
-            android:paddingTop="@dimen/padding15"
-            android:text="@string/fourth_quest" />
+                <RadioButton
+                    android:id="@+id/radio_sethan"
+                    style="@style/SecondQuest"
+                    android:text="@string/sethan" />
 
-        <LinearLayout style="@style/LinearLayout">
+                <RadioButton
+                    android:id="@+id/radio_sefoan"
+                    style="@style/SecondQuest"
+                    android:text="@string/sefoan" />
+            </RadioGroup>
 
-            <CheckBox
-                android:id="@+id/checkbox_wit"
-                style="@style/FourthQuest"
-                android:text="@string/wit"
+            <TextView
+                style="@style/QuestFont"
+                android:text="@string/third_quest" />
 
-                />
+            <EditText
+                android:id="@+id/name_principal_input"
+                style="@style/EditText"
+                android:hint="@string/writean" />
 
-            <CheckBox
-                android:id="@+id/checkbox_loyalty"
-                style="@style/FourthQuest"
-                android:text="@string/loyalty"
+            <TextView
+                style="@style/QuestFont"
+                android:paddingTop="@dimen/padding15"
+                android:text="@string/fourth_quest" />
 
-                />
+            <LinearLayout style="@style/LinearLayout">
 
-            <CheckBox
-                android:id="@+id/checkbox_intelligence"
-                style="@style/FourthQuest"
-                android:text="@string/intelligence"
+                <CheckBox
+                    android:id="@+id/checkbox_wit"
+                    style="@style/FourthQuest"
+                    android:text="@string/wit"
 
-                />
+                    />
 
-            <CheckBox
-                android:id="@+id/checkbox_cunning"
-                style="@style/FourthQuest"
-                android:text="@string/cunning"
+                <CheckBox
+                    android:id="@+id/checkbox_loyalty"
+                    style="@style/FourthQuest"
+                    android:text="@string/loyalty"
 
-                />
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkbox_intelligence"
+                    style="@style/FourthQuest"
+                    android:text="@string/intelligence"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkbox_cunning"
+                    style="@style/FourthQuest"
+                    android:text="@string/cunning"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/QuestFont"
+                android:text="@string/fifth_quest" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup5"
+                style="@style/RadioGroup"
+                android:paddingBottom="@dimen/padding15">
+
+                <RadioButton
+                    android:id="@+id/radio_accio"
+                    style="@style/FifthQuest"
+                    android:text="@string/accio"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_anapneo"
+                    style="@style/FifthQuest"
+                    android:text="@string/anapneo" />
+
+                <RadioButton
+                    android:id="@+id/radio_aparecium"
+                    style="@style/FifthQuest"
+                    android:text="@string/aparecium" />
+
+                <RadioButton
+                    android:id="@+id/radio_avis"
+                    style="@style/FifthQuest"
+                    android:text="@string/avis" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestFont"
+                android:text="@string/sixth_quest" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup6"
+                style="@style/RadioGroup"
+                android:paddingBottom="@dimen/padding15">
+
+                <RadioButton
+                    android:id="@+id/radio_green"
+                    style="@style/SixthQuest"
+                    android:text="@string/green"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_scarlet"
+
+                    style="@style/SixthQuest"
+                    android:text="@string/scarlet" />
+
+                <RadioButton
+                    android:id="@+id/radio_indigo"
+                    style="@style/SixthQuest"
+                    android:text="@string/indigo" />
+
+                <RadioButton
+                    android:id="@+id/radio_emerald"
+
+                    style="@style/SixthQuest"
+                    android:text="@string/emerald" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestFont"
+                android:text="@string/seventh_quest" />
+
+            <EditText
+
+                android:id="@+id/name_via_input"
+                style="@style/EditText"
+                android:hint="@string/writean" />
+
+            <TextView
+                style="@style/QuestFont"
+                android:paddingTop="@dimen/padding15"
+                android:text="@string/eighth_quest" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup8"
+                style="@style/RadioGroup"
+                android:paddingBottom="@dimen/padding15">
+
+                <RadioButton
+                    android:id="@+id/radio_whomping"
+
+                    style="@style/EighthQuest"
+                    android:text="@string/whomping"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_express"
+                    style="@style/EighthQuest"
+                    android:text="@string/express" />
+
+                <RadioButton
+                    android:id="@+id/radio_tower"
+                    style="@style/EighthQuest"
+                    android:text="@string/tower" />
+
+                <RadioButton
+                    android:id="@+id/radio_lake"
+                    style="@style/EighthQuest"
+                    android:text="@string/lake"
+
+                    />
+            </RadioGroup>
+
+            <Button
+                style="@style/Button"
+                android:text="@string/buttontext" />
         </LinearLayout>
 
 
-        <TextView
-            style="@style/QuestFont"
-            android:text="@string/fifth_quest" />
-
-        <RadioGroup
-            android:id="@+id/radiogroup5"
-            style="@style/RadioGroup"
-            android:paddingBottom="@dimen/padding15">
-
-            <RadioButton
-                android:id="@+id/radio_accio"
-                style="@style/FifthQuest"
-                android:text="@string/accio"
-
-                />
-
-            <RadioButton
-                android:id="@+id/radio_anapneo"
-                style="@style/FifthQuest"
-                android:text="@string/anapneo" />
-
-            <RadioButton
-                android:id="@+id/radio_aparecium"
-                style="@style/FifthQuest"
-                android:text="@string/aparecium" />
-
-            <RadioButton
-                android:id="@+id/radio_avis"
-                style="@style/FifthQuest"
-                android:text="@string/avis" />
-        </RadioGroup>
-
-        <TextView
-            style="@style/QuestFont"
-            android:text="@string/sixth_quest" />
-
-        <RadioGroup
-            android:id="@+id/radiogroup6"
-            style="@style/RadioGroup"
-            android:paddingBottom="@dimen/padding15">
-
-            <RadioButton
-                android:id="@+id/radio_green"
-                style="@style/SixthQuest"
-                android:text="@string/green"
-
-                />
-
-            <RadioButton
-                android:id="@+id/radio_scarlet"
-
-                style="@style/SixthQuest"
-                android:text="@string/scarlet" />
-
-            <RadioButton
-                android:id="@+id/radio_indigo"
-                style="@style/SixthQuest"
-                android:text="@string/indigo" />
-
-            <RadioButton
-                android:id="@+id/radio_emerald"
-
-                style="@style/SixthQuest"
-                android:text="@string/emerald" />
-        </RadioGroup>
-
-        <TextView
-            style="@style/QuestFont"
-            android:text="@string/seventh_quest" />
-
-        <EditText
-
-            android:id="@+id/name_via_input"
-            style="@style/EditText"
-            android:hint="@string/writean" />
-
-        <TextView
-            style="@style/QuestFont"
-            android:paddingTop="@dimen/padding15"
-            android:text="@string/eighth_quest" />
-
-        <RadioGroup
-            android:id="@+id/radiogroup8"
-            style="@style/RadioGroup"
-            android:paddingBottom="@dimen/padding15">
-
-            <RadioButton
-                android:id="@+id/radio_whomping"
-
-                style="@style/EighthQuest"
-                android:text="@string/whomping"
-
-                />
-
-            <RadioButton
-                android:id="@+id/radio_express"
-                style="@style/EighthQuest"
-                android:text="@string/express" />
-
-            <RadioButton
-                android:id="@+id/radio_tower"
-                style="@style/EighthQuest"
-                android:text="@string/tower" />
-
-            <RadioButton
-                android:id="@+id/radio_lake"
-                style="@style/EighthQuest"
-                android:text="@string/lake"
-
-                />
-        </RadioGroup>
-
-        <Button
-            style="@style/Button"
-            android:text="@string/buttontext" />
-    </LinearLayout>
-
-
-</ScrollView>
+    </ScrollView>
+</layout>

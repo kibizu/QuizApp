@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/custom_toast_container"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="8dp"
-    android:background="#DAAA"
-    android:layout_centerHorizontal="true"
-    >
-
-    <TextView android:id="@+id/text"
-        android:layout_width="wrap_content"
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/custom_toast_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorTextToast"
-        android:layout_gravity="center_horizontal"
-        android:text="Ciao sono un toast message"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        />
-</LinearLayout>
+        android:padding="8dp"
+        android:background="#DAAA"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextToast"
+            android:layout_gravity="center_horizontal"
+            android:text="Ciao sono un toast message"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+</layout>

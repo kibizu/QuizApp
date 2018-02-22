@@ -1,6 +1,7 @@
 package com.example.android.quizapp;
 
 import android.content.Context;
+import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -14,6 +15,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.android.quizapp.databinding.ActivityMainBinding;
+import com.example.android.quizapp.databinding.CustomToastBinding;
+import com.example.android.quizapp.databinding.ResultToastBinding;
 
 /**
  *This app is a quiz about the Harry Potter's world
@@ -83,10 +88,15 @@ public class MainActivity extends AppCompatActivity {
 
     private int incomplete;
 
+    ActivityMainBinding binding;
+    CustomToastBinding customToastBinding;
+    ResultToastBinding resultToastBinding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(Bundle.EMPTY);
-        setContentView(R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
 
         // If we have a saved state then we can restore it now
         if (savedInstanceState != null) {
@@ -127,14 +137,10 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        witCheck = (CheckBox) findViewById(R.id.checkbox_wit);
-        witCheck.setChecked(witCheckValue);
-        intellCheck = (CheckBox) findViewById(R.id.checkbox_intelligence);
-        intellCheck.setChecked(intellCheckValue);
-        cunningCheck = (CheckBox) findViewById(R.id.checkbox_cunning);
-        cunningCheck.setChecked(cunningCheckValue);
-        loyaltyCheck = (CheckBox) findViewById(R.id.checkbox_loyalty);
-        loyaltyCheck.setChecked(loyaltyCheckValue);
+        binding.checkboxWit.setChecked(witCheckValue);
+        binding.checkboxIntelligence.setChecked(intellCheckValue);
+        binding.checkboxCunning.setChecked(cunningCheckValue);
+        binding.checkboxLoyalty.setChecked(loyaltyCheckValue);
 
         if (checked5) {
 
@@ -423,8 +429,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        EditText editText1 = (EditText) findViewById(R.id.name_principal_input);
-        namePrincipal = editText1.getText().toString();
+        namePrincipal = binding.namePrincipalInput.getText().toString();
 
         if (namePrincipal.matches("")) {
 
@@ -476,8 +481,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        EditText editText2 = (EditText) findViewById(R.id.name_via_input);
-        nameCourier = editText2.getText().toString();
+        nameCourier = binding.nameViaInput.getText().toString();
 
         if (nameCourier.matches("")) {
 
@@ -514,10 +518,13 @@ public class MainActivity extends AppCompatActivity {
 
         Context context=getApplicationContext();
         LayoutInflater inflater = getLayoutInflater();
+
         View layout = inflater.inflate(R.layout.result_toast,
                 (ViewGroup) findViewById(R.id.result_toast_container));
         TextView text = (TextView) layout.findViewById(R.id.text);
+
         ImageView image = (ImageView) layout.findViewById(R.id.imagetoast);
+
         Toast toast = new Toast(context);
         toast.setGravity(Gravity.CENTER|Gravity.CENTER, 0, 0);
         toast.setDuration(Toast.LENGTH_LONG);
@@ -560,28 +567,19 @@ public class MainActivity extends AppCompatActivity {
         EditText editText;
         CheckBox checkBox;
 
-        radioGroup = (RadioGroup) findViewById(R.id.radiogroup1);
-        radioGroup.clearCheck();
-        radioGroup = (RadioGroup) findViewById(R.id.radiogroup2);
-        radioGroup.clearCheck();
-        editText = (EditText) findViewById(R.id.name_principal_input);
-        editText.setText("");
-        checkBox = (CheckBox) findViewById(R.id.checkbox_wit);
-        checkBox.setChecked(false);
-        checkBox = (CheckBox) findViewById(R.id.checkbox_cunning);
-        checkBox.setChecked(false);
-        checkBox = (CheckBox) findViewById(R.id.checkbox_loyalty);
-        checkBox.setChecked(false);
-        checkBox = (CheckBox) findViewById(R.id.checkbox_intelligence);
-        checkBox.setChecked(false);
-        radioGroup = (RadioGroup) findViewById(R.id.radiogroup5);
-        radioGroup.clearCheck();
-        radioGroup = (RadioGroup) findViewById(R.id.radiogroup6);
-        radioGroup.clearCheck();
-        radioGroup = (RadioGroup) findViewById(R.id.radiogroup8);
-        radioGroup.clearCheck();
-        editText = (EditText) findViewById(R.id.name_via_input);
-        editText.setText("");
+
+        binding.radiogroup1.clearCheck();
+        binding.radiogroup2.clearCheck();
+        binding.namePrincipalInput.setText("");
+        binding.checkboxWit.setChecked(false);
+        binding.checkboxCunning.setChecked(false);
+        binding.checkboxLoyalty.setChecked(false);
+        binding.checkboxIntelligence.setChecked(false);
+        binding.radiogroup5.clearCheck();
+        binding.radiogroup6.clearCheck();
+        binding.radiogroup8.clearCheck();
+        binding.nameViaInput.setText("");
+
         checked1 = false;
         idRadioButton1 = 0;
         checked2 = false;
