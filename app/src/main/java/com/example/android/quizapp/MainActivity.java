@@ -2,6 +2,7 @@ package com.example.android.quizapp;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -515,22 +516,14 @@ public class MainActivity extends AppCompatActivity {
     private void createResultToastMessage (String textMessage, int imageId) {
 
         Context context=getApplicationContext();
-        LayoutInflater inflater = getLayoutInflater();
-
-        View layout = inflater.inflate(R.layout.result_toast,
-                (ViewGroup) findViewById(R.id.result_toast_container));
-        TextView text = (TextView) layout.findViewById(R.id.text);
-
-        ImageView image = (ImageView) layout.findViewById(R.id.imagetoast);
-
+        ResultToastBinding resultToast = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.result_toast, null, false);
+        resultToast.text.setText(textMessage);
+        resultToast.imagetoast.setImageResource(imageId);
         Toast toast = new Toast(context);
         toast.setGravity(Gravity.CENTER|Gravity.CENTER, 0, 0);
         toast.setDuration(Toast.LENGTH_LONG);
-        toast.setView(layout);
-        text.setText(textMessage);
-        image.setImageResource(imageId);
+        toast.setView(resultToast.getRoot());
         toast.show();
-
         return;
 
     }
@@ -542,17 +535,13 @@ public class MainActivity extends AppCompatActivity {
     private void createToastMessage (String textMessage) {
 
         Context context=getApplicationContext();
-        LayoutInflater inflater = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.custom_toast,
-                (ViewGroup) findViewById(R.id.custom_toast_container));
-        TextView text = (TextView) layout.findViewById(R.id.text);
+        CustomToastBinding customToast = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.custom_toast,null,false);
+        customToast.text.setText(textMessage);
         Toast toast = new Toast(context);
         toast.setGravity(Gravity.CENTER|Gravity.CENTER, 0, 0);
         toast.setDuration(Toast.LENGTH_LONG);
-        toast.setView(layout);
-        text.setText(textMessage);
+        toast.setView(customToast.getRoot());
         toast.show();
-
         return;
 
     }
